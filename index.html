@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        <meta name="author" content="pc-ng">
+        <link rel="canonical" href="https://uoft-hyperskin.github.io/">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Hyper-Skin Challenge</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/javascript.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href=".">Hyper-Skin Challenge</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem active">
+                                <a href="." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="participate/" class="nav-link">Participate</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="committee/" class="nav-link">Committee</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="contact/" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" class="nav-link disabled">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="participate/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#icassp-2024-sp-grand-challenge-on-hyperspectral-skin-vision" class="nav-link">ICASSP 2024 SP Grand Challenge on Hyperspectral Skin Vision</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#dataset" class="nav-link">Dataset</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#timeline" class="nav-link">Timeline</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#important-date" class="nav-link">Important Date</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#sponsor" class="nav-link">Sponsor</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="icassp-2024-sp-grand-challenge-on-hyperspectral-skin-vision">ICASSP 2024 SP Grand Challenge on Hyperspectral Skin Vision</h1>
+<!-- ## Introduction -->
+<p>Introducing ICASSP 2024 SPGC competition aiming at reconstructing skin spectral reflectance in the visible (VIS) and near-infrared (NIR) spectral range from RGB images captured by everyday cameras, offering a transformative approach for cosmetic and beauty applications. 
+By reconstructing the skin spectral reflectance in both VIS and NIR spectrum, this competition aims to provide rich hyperspectral information accessible on consumer devices. With the reconstructed skin spectral, we pave the way for the creation of personalized beauty and skincare solutions directly through consumers' smartphones and other accessible devices.
+With the goal of democratizing skin analysis and advancing the field of beauty technology, this competition invites computer vision researchers, machine learning experts, and cosmetic professionals to contribute to a future where personalized beauty and skincare are accessible to all.</p>
+<h2 id="dataset">Dataset</h2>
+<p>The data that will be used in the competition is carefully collected and curated following the ethical guidelines approved by the Human Research Ethics Program (HREP) at the University of Toronto. 
+Figure below shows the schematic of our setup for the data collection.
+The image on the right side illustrates our experimental set up for the data collection, while the right side provides a schematic representation of the set up.
+The hyperspectral camera used to collect the hyperspectral image is Specim FX10. 
+The Specim FX10 camera has a spectral range of 400-1000 nm, with a total of 448 bands, and a spatial resolution of 1024 <span class="arithmatex">\(\times\)</span> 1024 pixels. 
+The frame rate of the camera is set to 45 Hz. 
+Since the Specim FX10 is a line-scan camera, it took approximately 22.7 s to finish scan the entire hypercube of dimension 1024 <span class="arithmatex">\(\times\)</span> 1024 <span class="arithmatex">\(\times\)</span> 448.
+The camera was placed at a distance of 40 cm from the subject, who was required to sit on a stool during the data collection. To ensure sufficient lighting for the imaging process, two halogen lights were used and pointed at 45 degrees to the subject. The halogen lights were used because they have a broad spectrum and provide stable illumination for the imaging process.</p>
+<p><img alt="alt text" src="img/setup.png" title="set up" /></p>
+<p>A total of six images were captured for each subject: three neutral images (left, front, right) and three smiling images (left, front, right). 
+A total of 51 subjects (27 male and 24 female, age from 17 to 60, 46 Asian, 4 European, and 1 Latino) participated in the experiments, with six images per participant. 
+In total, there are 306 hyperspectral images and their corresponding RGB images will be used for the competition.
+During data collection, participants' personal information will not be recorded in the database, and only a file linking unique ID numbers to participants.
+All the data is collected with permission from participants who sign an informed consent form, and the data is ready for use in the competition. </p>
+<p>Please refer to this <a href="https://hyper-skin-2023.github.io/">link</a> for the dataset description and the instructions to access the data.</p>
+<h3 id="task">Task</h3>
+<p>The skin spectral reconstruction task aims to reconstruct the skin spectral image cube from the given RGB image. 
+Given the pair of masked RGB <span class="arithmatex">\(\tilde{R}\)</span> and skin spectral images <span class="arithmatex">\(\tilde{S}\)</span> described previously, the task can be formulated as finding a mapping function <span class="arithmatex">\(f\)</span> that maps <span class="arithmatex">\(\tilde{R}\)</span> to <span class="arithmatex">\(\tilde{S}\)</span>, as described below:</p>
+<div class="arithmatex">\[
+    \tilde{S} = f(\tilde{R}; \Theta).
+\]</div>
+<p>The function <span class="arithmatex">\(f(\cdot; \Theta)\)</span> parameterized by <span class="arithmatex">\(\Theta\)</span> can be implemented using a deep learning model or any other analytical model that can effectively learn the mapping between RGB and hyperspectral images.
+The problem posed by our proposed competition is both scientifically and technically challenging, but not impossible to solve. 
+Accurately estimating skin reflectance requires a deep understanding of color imaging, spectral analysis, and the physics of light interaction with biological tissues. 
+However, similar problems have been successfully tackled in other application domains, demonstrating that with the right approach and tools, such challenges can be overcome. 
+The key to success lies in leveraging the latest advancements in computer vision and machine learning, along with rigorous data collection and preprocessing, to extract meaningful information from complex and noisy data.</p>
+<h3 id="evaluation-criteria">Evaluation Criteria</h3>
+<h3 id="baseline">Baseline</h3>
+<p>For the task to skin spectral reconstruction, we will use the <a href="">Mask-guided Spectral-wise Transformer (MST)</a> published in the last year's CVPR conference as the baseline solution. This method leverages a transformer-based architecture that takes RGB images as input and generates corresponding skin spectral data. 
+The data loading and baseline methods are provided <a href="https://github.com/hyperspectral-skin/Hyper-Skin-2023">here</a>.</p>
+<h2 id="timeline">Timeline</h2>
+<h2 id="important-date">Important Date</h2>
+<h2 id="sponsor">Sponsor</h2></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2023 Hyper-Skin, University of Toronto – <a href="#__consent">Change cookie settings</a></p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="javascripts/mathjax.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.5.2
+Build Date UTC : 2023-09-06 15:49:57.341715+00:00
+-->
