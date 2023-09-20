@@ -1,0 +1,33 @@
+.button.is-rounded {
+    border-radius: 290486px;
+    padding-left: calc(1em + 0.25em);
+    padding-right: calc(1em + 0.25em);
+}
+.button.is-normal {
+    font-size: 1rem;
+}
+.button.is-dark {
+    background-color: #2FA4E7;
+    border-color: transparent;
+    color: #fff;
+}
+.link-block a {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.button {
+    background-color: #fff;
+    border-color: #dbdbdb;
+    border-width: 1px;
+    color: #2FA4E7;
+    cursor: pointer;
+    justify-content: center;
+    padding-bottom: calc(0.5em - 1px);
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: calc(0.5em - 1px);
+    text-align: center;
+    white-space: nowrap;
+}
+
