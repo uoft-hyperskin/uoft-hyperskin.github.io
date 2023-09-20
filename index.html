@@ -36,16 +36,13 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav ml-auto">
                             <li class="navitem">
-                                <a href="dataset/" class="nav-link">Dataset</a>
-                            </li>
-                            <li class="navitem">
                                 <a href="participate/" class="nav-link">Participate</a>
                             </li>
                             <li class="navitem">
-                                <a href="committee/" class="nav-link">Committee</a>
+                                <a href="rule/" class="nav-link">Rules</a>
                             </li>
                             <li class="navitem">
-                                <a href="contact/" class="nav-link">Contact</a>
+                                <a href="committee/" class="nav-link">Committee</a>
                             </li>
                         </ul>
 
@@ -104,7 +101,7 @@ Let <span class="arithmatex">\(R \in \mathbb{R}^{w \times h \times c}\)</span> b
 \]</div>
 <p>The function <span class="arithmatex">\(f(\cdot; \Theta)\)</span> parameterized by <span class="arithmatex">\(\Theta\)</span> can be implemented using a deep learning model or any other analytical model that can effectively learn the mapping between RGB and hyperspectral images.
 The task is both scientifically and technically challenging, but not impossible to solve. </p>
-<p>In this competition, participants will have access to two distinct datasets. The first dataset comprises a pair of RGB and VIS data, while the second dataset consists of a pair of MSI (RGB + infrared image at 960 nm) and NIR data. The challenge is to develop a single model capable of reconstructing skin spectral information across both the VIS spectrum (400 - 700 nm) and the NIR spectrum (700 - 1000 nm) using the MSI data, which is generated with a real camera response function. Detailed instructions on how to request access to the datasets are available <a href="/dataset">here</a>.</p>
+<p>In this competition, participants will have access to two distinct datasets. The first dataset comprises a pair of RGB and VIS data, while the second dataset consists of a pair of MSI (RGB + infrared image at 960 nm) and NIR data. The challenge is to develop a single model capable of reconstructing skin spectral information across both the VIS spectrum (400 - 700 nm) and the NIR spectrum (700 - 1000 nm) using the MSI data, which is generated with a real camera response function. Detailed instructions on how to request access to the datasets will be provided in our Github organization once you register for the competition.</p>
 <p><img src="img/skin-reconstruction.png" alt="" style="width: 70%; margin-left: auto; margin-right: auto; display: block;"></p>
 <h3 id="evaluation-criteria"><strong>Evaluation Criteria</strong></h3>
 <p>The reconstructed skin spectral will be evaluated from both spatial and spectral domains, with the Structural Similarity Index (SSIM) and the Spectral Angle Mapper (SAM). </p>
@@ -118,17 +115,17 @@ $$
 SAM(\mathbf{h}_c, \tilde{\mathbf{h}}_{c}) = \cos^{-1} \left(  \frac{\sum_{k = 1}^{C} \mathbf{h}_c(k) \tilde{\mathbf{h}}_{c}(k)}{\sqrt{\sum_{k = 1}^{C} \mathbf{h}_c(k)^2} \sqrt{\sum_{k = 1}^{C} \tilde{\mathbf{h}}_{c}(k)}} \right) ,
 $$ -->
 <p>During the evaluation process, a mask will be employed to exclude the background image, ensuring that the assessment remains centered on the human skin spectral characteristics.
-The evaluation metrics will be provided to the registered participant who has signed the EULA through our Github. More information is available [here]{/participate}.</p>
+The evaluation metrics will be provided via our Github organization. All registered participants, who have signed the EULA, should be able to access the evaluation code. More information is available <a href="/participate">here</a>.</p>
 <h3 id="baseline"><strong>Baseline</strong></h3>
 <p>For the task to skin spectral reconstruction, we will use the <a href="">Mask-guided Spectral-wise Transformer (MST)</a> published in 2022 CVPR conference as the baseline solution. This method leverages a transformer-based architecture that takes RGB images as input and generates corresponding skin spectral data. 
-The data loading and baseline methods are provided <a href="https://github.com/hyperspectral-skin/Hyper-Skin-2023">here</a>.</p>
+The data loading and baseline methods will be provided to all the registered participants via our Github organization.</p>
     </div>
             </div>
         </div>
 
         <footer class="col-md-12">
             <hr>
-                <p>Copyright &copy; 2023 Hyper-Skin, University of Toronto – <a href="#__consent">Change cookie settings</a></p>
+                <p style="text-align: center;">Copyright &copy; 2023 Hyper-Skin, University of Toronto – <a href="#__consent">Change cookie settings</a></p>
             <!-- <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p> -->
         </footer>
         <script src="js/jquery-3.6.0.min.js"></script>
@@ -209,5 +206,5 @@ The data loading and baseline methods are provided <a href="https://github.com/h
 
 <!--
 MkDocs version : 1.5.2
-Build Date UTC : 2023-09-20 12:45:32.135682+00:00
+Build Date UTC : 2023-09-20 20:04:53.527825+00:00
 -->
